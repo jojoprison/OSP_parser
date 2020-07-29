@@ -47,9 +47,6 @@ def get_options(page_source, area):
         })
         index_elem += 1
 
-    # удаляем первый элемент со словом Выбрать
-    # del regions[0]
-
     data = [regions, len(regions)]
 
     print(area + " elements len: " + str(data[1]))
