@@ -63,7 +63,7 @@ def create_table():
         # commit the changes
         conn.commit()
     except (Exception, psycopg2.DatabaseError) as error:
-        print(error)
+        print("ERROR: " + str(error))
     finally:
         if conn is not None:
             conn.close()
